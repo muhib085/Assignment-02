@@ -205,6 +205,19 @@ body{
 .trainer-designation{
     margin-top: 3px;
 }
+.footer-container{
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 90px;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+    gap: 20px;
+}
+.hr-line{
+    color: rgba(255, 255, 255, 0.1);
+}
 /* Responsive for small or mobile devices */
 
 @media screen and (max-width: 576px) {
@@ -244,5 +257,9 @@ body{
     }
     .trainers{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-content{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
     }
 }
