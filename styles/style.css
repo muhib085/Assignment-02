@@ -115,7 +115,96 @@ body{
     font-size: 1.46rem;
     color: white;
 }
+.text-center{
+    text-align: center;
+}
 
+.habits{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+.title{
+    font-size: 3rem;
+    margin: 0px;
+}
+.habit img{
+    border-radius: 50%;
+}
+.habit-movement{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0px;
+}
+.run-container{
+    margin-top: 100px;
+}
+.run-part{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 18px;
+    padding: 32px;
+    background-color: rgba(34, 34, 34, 1);
+}
+.run-description{
+    width: 50%;
+}
+.run-img img{
+    width: 380px;
+    border-radius: 18px;
+}
+.team-container{
+    margin-top: 100px;
+}
+.trainers{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #191919;
+    border-radius: 18px;
+}
+.trainer{
+    background-size: cover;
+    /* width: 327px; */
+    height: 273px;
+    border-radius: 18px;
+    position: relative;
+}
+.trainer-img-one{
+    background-image: url("../images/trainer1.png");
+}
+.trainer-img-two{
+    background-image: url("../images/trainer2.png");
+}
+.trainer-img-three{
+    background-image: url("../images/trainer3.png");
+}
+.trainer-img-four{
+    background-image: url("../images/trainer4.png");
+}
+.trainer-img-five{
+    background-image: url("../images/trainer5.png");
+}
+.trainer-img-six{
+    background-image: url("../images/trainer6.png");
+}
+.trainer-info{
+    padding-left: 20px;
+    position: absolute;
+    bottom: 15px;
+}
+.trainer-info-title{
+    margin: 0px;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+.trainer-designation{
+    margin-top: 3px;
+}
 /* Responsive for small or mobile devices */
 
 @media screen and (max-width: 576px) {
@@ -131,5 +220,29 @@ body{
     .small-device{
         display: flex;
         flex-direction: column;
+    }
+    .habits{
+        grid-template-columns: 1fr;
+    }
+    .run-part{
+        text-align: center;
+        flex-direction: column;
+    }
+    .run-description{
+        width: 100%;
+    }
+    .run-img{
+        margin-top: 20px;
+    }
+    .primary-btn{
+        width: 60%;
+        padding: 12px 45px;
+        background-color: rgba(230, 83, 60, 1);
+        color: white;
+        border-radius: 40px;
+        font-weight: 600;
+    }
+    .trainers{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
